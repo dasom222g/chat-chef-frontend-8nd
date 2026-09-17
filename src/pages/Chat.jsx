@@ -3,6 +3,8 @@ import MessageBox from "../components/MessageBox";
 import PrevButton from "../components/PrevButton";
 import { MoonLoader } from "react-spinners";
 
+// 미션: Chat에서 ingredientList 데이터를 props로 받아서 콘솔에 찍어보기
+
 const Chat = () => {
   // logic
 
