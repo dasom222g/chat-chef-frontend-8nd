@@ -30,7 +30,7 @@ const Info = ({ sendIngredientList }) => {
   const handleNext = () => {
     // 미션: chat페이지로 이동 구현
     sendIngredientList(ingredientList);
-    // history("/chat");
+    history("/chat");
   };
 
   const handleRemove = (selectedId) => {
