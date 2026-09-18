@@ -44,7 +44,7 @@ const Chat = ({ ingredientList }) => {
       const assistantMessage = { role, content };
       setMessages((prev) => [...prev, assistantMessage]);
 
-      console.log("🚀 ~ sendMessage ~ result:", result);
+      // console.log("🚀 ~ sendMessage ~ result:", result);
     } catch (error) {
       console.error(error);
     } finally {
@@ -60,7 +60,7 @@ const Chat = ({ ingredientList }) => {
       role: "user",
       content: value.trim(),
     };
-    console.log("🚀 userMessage:", userMessage);
+    // console.log("🚀 userMessage:", userMessage);
 
     // Messages데이터 업데이트 (유저 메시지 추가)
     setMessages((prev) => [...prev, userMessage]);
@@ -112,9 +112,9 @@ const Chat = ({ ingredientList }) => {
   };
 
   // 미션: infoMessages가 변경됐을때 콘솔에 찍어보기
-  useEffect(() => {
-    console.log("infoMessages", infoMessages);
-  }, [infoMessages]);
+  // useEffect(() => {
+  //   console.log("infoMessages", infoMessages);
+  // }, [infoMessages]);
 
   // 페이지에 진입했을때 딱 한번 실행
   useEffect(() => {
